@@ -1,0 +1,263 @@
+@import "config";
+@import "nav";
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 500;
+
+  &.lg-heading {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  &.lg-heading-home {
+    font-size: 4rem;
+    text-align: center;
+  }
+  &.sm-heading {
+    position: absolute;
+    left: 250px;
+    top: 160px;
+    padding: 0.2rem 4rem;
+    // background: rgba(lighten($shade-color, 2), 0.3);
+    display: inline;
+  }
+  &.sm-heading-2 {
+    margin-top: 2rem;
+    text-transform: uppercase;
+    font-weight: 350;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 0rem;
+    padding: 0.2rem 1rem;
+    background: rgba(lighten($shade-color, 2), 0.5);
+  }
+  &.sm-head-child {
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+    background: rgba(lighten($shade-color, 2), 0.5);
+  }
+
+  &.center {
+    text-align: center;
+  }
+
+  &.code-header {
+    //display: flex;
+    // /padding: 0.2rem 3rem;
+    text-align: center;
+    border: 0;
+    // margin: 0.2rem, 1rem;
+    background: lighten($shade-color, 50);
+    color: #fff;
+    text-decoration: none;
+    font-size: 36px;
+    font-weight: 300;
+    font-size: 2rem;
+    margin-top: 0;
+  }
+}
+
+.text-secondary {
+  margin: 0;
+  font-size: 50px;
+  font-weight: 500;
+  color: $secondary-color;
+  background: $primary-color;
+}
+
+.sm-child-heading {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.logo {
+  color: $secondary-color;
+  font-size: 40px;
+  padding: 0;
+  margin: 0;
+}
+
+//main
+
+main {
+  padding: 4rem;
+  min-height: calc(90vh - 20px);
+
+  &#home {
+    overflow: hidden;
+    h1 {
+      margin-top: 15vh;
+    }
+  }
+
+  &#about {
+    overflow: hidden;
+    h1 {
+      margin-top: 5vh;
+    }
+  }
+
+  &#code {
+    overflow: hidden;
+    h1 {
+      margin-top: 5vh;
+    }
+  }
+
+  &#contact {
+    overflow: hidden;
+    h1 {
+      margin-top: 5vh;
+    }
+  }
+}
+
+// Home Page
+.icons {
+  text-align: center;
+}
+
+.fab-icons {
+  color: $primary-color;
+  padding: 1rem;
+}
+
+.fab-icons-btn {
+  color: $secondary-color;
+  padding: 0rem;
+}
+
+//About Page
+.about-me {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    "portrait-image  history history history"
+    "dev1 dev2 dev3 dev4";
+  grid-template-columns: repeat(4, 1fr);
+
+  .portrait-image {
+    grid-area: portrait-image;
+    margin: auto;
+    border-radius: 50%;
+    border: $primary-color 3px solid;
+    background-size: contain;
+    height: 180px;
+    width: 180px;
+  }
+  .history {
+    grid-area: history;
+  }
+
+  .dev-1 {
+    grid-area: dev1;
+  }
+  .dev-2 {
+    grid-area: dev2;
+  }
+  .dev-3 {
+    grid-area: dev3;
+  }
+  .dev-4 {
+    grid-area: dev4;
+  }
+  .dev-light {
+    padding: 0.5rem;
+    border-bottom: $primary-color 5px solid;
+    background: lighten($shade-color, 68);
+  }
+
+  .dev-dark {
+    color: $secondary-color;
+    padding: 0.5rem;
+    border-bottom: $secondary-color 5px solid;
+    background: lighten($shade-color, 5);
+  }
+}
+
+//Code Page
+.projects {
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-columns: repeat(3, 1fr);
+
+  img {
+    width: 100%;
+    background-size: cover;
+    border: 1px black solid;
+  }
+}
+
+.code-info {
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-areas: "code1 code2 code3";
+  grid-template-columns: repeat(3, 1fr);
+  height: 50vh;
+
+  .code-1 {
+    grid-area: code1;
+  }
+  .code-2 {
+    grid-area: code2;
+  }
+
+  .code-3 {
+    grid-area: code3;
+  }
+
+  .code-light {
+    width: 100%;
+    margin: 0;
+    margin-top: 0;
+    border-bottom: $primary-color 4px solid;
+    background: lighten($shade-color, 68);
+  }
+
+  .code-dark {
+    color: $secondary-color;
+    padding: 0.5rem;
+    border-bottom: $secondary-color 5px solid;
+    background: lighten($shade-color, 5);
+  }
+}
+
+ul {
+  list-style-type: none;
+  margin: 0rem;
+  padding: 1rem;
+}
+
+li {
+  padding: 0.2rem;
+  font-size: 20px;
+  font-weight: 300;
+  border-bottom: 1px black solid;
+}
+
+//Contact page
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem;
+  div {
+    font-size: 2rem;
+    border: 3px black solid;
+    padding: 1rem 2rem;
+    margin-bottom: 3rem;
+  }
+}
+
+#main-footer {
+  text-align: center;
+  padding: 1.1rem;
+  background: lighten($primary-color, 10);
+  color: $secondary-color;
+  height: 20px;
+}

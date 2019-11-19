@@ -1,0 +1,30 @@
+$primary-color: black;
+$secondary-color: #fff;
+$shade-color: #444;
+$home-image: url(../src/img/background.jpg);
+$background-opacity: 0.5;
+
+@mixin easeOut {
+  transition: all 0.5s ease-out;
+}
+
+body {
+  //background: $home-image;
+  //background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: rgba($secondary-color, $background-opacity);
+  }
+}
