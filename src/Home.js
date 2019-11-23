@@ -1,10 +1,7 @@
 import React, { Component } from "react";
-import {
-  FaFacebookSquare,
-  FaTwitterSquare,
-  FaLinkedin,
-  FaGithubSquare
-} from "react-icons/fa";
+import portfolio from "./img/projects/portfolio.png";
+import order from "./img/projects/e_order.png";
+import todo from "./img/projects/todo.png";
 
 const dev = ["Web Developer", "Odoo Developer", "Programmer"];
 
@@ -30,17 +27,68 @@ export default class Home extends Component {
     let textChange = dev[this.state.textIndex % dev.length];
     return (
       <main id="home">
-        <h2 className="sm-heading">Hello!</h2>
-        <h1 className="lg-heading-home">
-          I'm Joven<span className="text-secondary"> Lawrence Gersaniba </span>
-        </h1>
-        <h2 className="sm-heading-2">{textChange}</h2>
+        <div className="home-top">
+          <div className="home-body">
+            <h2 className="sm-heading">Hello!</h2>
+            <h1 className="lg-heading-home">
+              I'm Joven
+              <span className="text-secondary"> Lawrence Gersaniba </span>
+            </h1>
+            <h2 className="sm-heading-2">{textChange}</h2>
+          </div>
+        </div>
+        <div className="handle"></div>
+        <div className="home-bottom">
+          <div id="content-detail">
+            <div className="header-center">
+              <h3>Some of my latest work</h3>
+            </div>
+            <ul className="thumbs">
+              <li className="clear">
+                <a
+                  target="_blank"
+                  without
+                  rel="noopener noreferrer"
+                  href="https://github.com/lawrence24/e_order"
+                >
+                  <img src={portfolio} alt="e_order" />
+                </a>
+                <div className="description">
+                  <h4>My first portfolio</h4>
+                  <p>Build in React and Sass</p>
+                </div>
+              </li>
 
-        <div className="icons">
-          <FaFacebookSquare className="fab-icons" size="50" />
-          <FaTwitterSquare className="fab-icons" size="50" />
-          <FaLinkedin className="fab-icons" size="50" />
-          <FaGithubSquare className="fab-icons" size="50" />
+              <li className="clear">
+                <a
+                  target="_blank"
+                  without
+                  rel="noopener noreferrer"
+                  href="https://github.com/lawrence24/e_order"
+                >
+                  <img src={order} alt="e_order" />
+                </a>
+                <div className="description">
+                  <h4>A/R Payment</h4>
+                  <p>Build in Odoo</p>
+                </div>
+              </li>
+              <li className="clear">
+                <a
+                  target="_blank"
+                  without
+                  rel="noopener noreferrer"
+                  href="https://github.com/lawrence24/testTodo"
+                >
+                  <img src={todo} alt="todo" />
+                </a>
+                <div className="description">
+                  <h4>Todo CRUD</h4>
+                  <p>Test before I got the job</p>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </main>
     );

@@ -11,7 +11,7 @@ export default class Nav extends Component {
           <div className="btn-line"></div>
         </div>
         <div className="nav-logo">
-          <h1>Portfolio</h1>
+          <h1>{"<Portfolio />"}</h1>
         </div>
         <ul className="nav-menu">
           <Link className="nav-links" to="/">
@@ -20,9 +20,7 @@ export default class Nav extends Component {
           <Link className="nav-links" to="/about">
             <li className="nav-item">About</li>
           </Link>
-          <Link className="nav-links" to="/code">
-            <li className="nav-item">Code</li>
-          </Link>
+
           <Link className="nav-links" to="/contact">
             <li className="nav-item">Contact</li>
           </Link>
