@@ -14,7 +14,7 @@ export default class Nav extends Component {
           <h1>{"<Portfolio />"}</h1>
         </div>
         <ul className="nav-menu">
-          <Link className="nav-links" to="/">
+          <Link className="nav-links" to={process.env.PUBLIC_URL + "/"}>
             <li className="nav-item">Home</li>
           </Link>
           <Link className="nav-links" to="/about">
