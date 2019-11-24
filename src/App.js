@@ -9,11 +9,11 @@ import "./scss/App.scss";
 
 export default class App extends Component {
   render = () => (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router>
       <div>
         <Nav />
         <Switch>
-          <Route exact path="/" component={Home} />
+          <Route exact path={process.env.PUBLIC_URL + "/"} component={Home} />
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
         </Switch>
