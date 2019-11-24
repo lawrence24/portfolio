@@ -13,7 +13,7 @@ export default class App extends Component {
       <div>
         <Nav />
         <Switch>
-          <Route path={"/" + process.env.PUBLIC_URL} exact component={Home} />
+          <Route exact path={"/" + process.env.PUBLIC_URL} component={Home} />
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
         </Switch>
