@@ -49,9 +49,9 @@ export default class Home extends Component {
                   target="_blank"
                   without
                   rel="noopener noreferrer"
-                  href="https://github.com/lawrence24/e_order"
+                  href="https://github.com/lawrence24/portfolio"
                 >
-                  <img src={portfolio} alt="e_order" />
+                  <img src={portfolio} alt="portfolio" />
                 </a>
                 <div className="description">
                   <h4>My first portfolio</h4>
