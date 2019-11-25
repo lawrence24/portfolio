@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.5058b762.chunk.css",
-    "main.js": "/portfolio/static/js/main.ae92f717.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.ae92f717.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.787ff95e.chunk.css",
+    "main.js": "/portfolio/static/js/main.d1701cec.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.d1701cec.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.86a05020.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.86a05020.js.map",
     "static/js/2.16fc1cf2.chunk.js": "/portfolio/static/js/2.16fc1cf2.chunk.js",
     "static/js/2.16fc1cf2.chunk.js.map": "/portfolio/static/js/2.16fc1cf2.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.4b84381f919f20043efb717f51c900bf.js": "/portfolio/precache-manifest.4b84381f919f20043efb717f51c900bf.js",
+    "precache-manifest.ae05bd3af3319e2d6318a57f831d0f47.js": "/portfolio/precache-manifest.ae05bd3af3319e2d6318a57f831d0f47.js",
     "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.5058b762.chunk.css.map": "/portfolio/static/css/main.5058b762.chunk.css.map",
+    "static/css/main.787ff95e.chunk.css.map": "/portfolio/static/css/main.787ff95e.chunk.css.map",
     "static/media/android-studio-logo.png": "/portfolio/static/media/android-studio-logo.794c3db3.png",
     "static/media/e_order.png": "/portfolio/static/media/e_order.d445a194.png",
     "static/media/odoo-logo.png": "/portfolio/static/media/odoo-logo.fefecad8.png",
@@ -22,7 +22,7 @@
   "entrypoints": [
     "static/js/runtime-main.86a05020.js",
     "static/js/2.16fc1cf2.chunk.js",
-    "static/css/main.5058b762.chunk.css",
-    "static/js/main.ae92f717.chunk.js"
+    "static/css/main.787ff95e.chunk.css",
+    "static/js/main.d1701cec.chunk.js"
   ]
 }
